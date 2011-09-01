@@ -1,0 +1,4 @@
+/* It is important that the styles remain in this specific order */
+
+@import url(reset.css);
+@import url(global.css);
