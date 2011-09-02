@@ -43,9 +43,6 @@ body {
 	text-indent: -99999px;
 	background: transparent url(../images/btn_settings.png) 0 0 no-repeat;
 	margin: 0 0 0 25px;
-	border-right: 1px #2f6d87 solid;
-	-webkit-box-shadow: inset -1px 0 0 #3d8bac;
-	padding: 0 20px 0 0;
 }
 
 #header ul#top_nav li#manage_contacts a {
