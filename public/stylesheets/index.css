@@ -1,0 +1,222 @@
+#get_started, #your_trips, #mini_cals {
+	margin: 0 0 30px 0;
+}
+
+#sidebar #get_started h2 {
+	font-size: 24px;
+	color: #347996;
+	font-weight: bold;
+	border-bottom: 1px #DDD solid;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+}
+
+#get_started ul li {
+	float: left;
+}
+
+#get_started ul li a {
+	background: #347996;
+	font-size: 14px;
+	font-weight: bold;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #FFF;
+	padding: 12px 30px 12px 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 0 0 5px;
+	display: block;
+}
+
+#get_started ul li a:hover {
+	background: #333;
+}
+
+#get_started ul li a:active {
+	color: #DDD;
+}
+
+#sidebar h2 {
+	font-size: 20px;
+	color: #777;
+	font-weight: bold;
+	border-bottom: 1px #DDD solid;
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+}
+
+#your_trips ul li {
+	padding: 8px;
+	background: #EEE;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: 5px 0 5px 0;
+	position: relative;
+}
+
+#your_trips ul li a.trip_name {
+	text-decoration: none;
+}
+
+#your_trips ul li a.trip_name em.icon {
+	width: 20px;
+	height: 20px;
+	display: block;
+	float: left;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:    3px;
+	position: relative;
+	top: -2px;
+	margin: 0 10px 0 0;
+}
+
+#your_trips ul li a.trip_name em.red {
+	background: #be001b;
+}
+
+#your_trips ul li a.trip_name span {
+	font-size: 13px;
+	color: #777;
+	font-weight: bold;
+}
+
+#your_trips ul li a.trip_menu em.icon {
+	width: 10px;
+	height: 6px;
+	background: transparent url(../images/icon_edit_trip_arrow.png) 5px 7px no-repeat;
+	display: block;
+	float: right;
+	padding: 12px 5px 0 5px;
+	position: relative;
+	top: -2px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:    3px;
+	border: 1px #EEE solid;
+}
+
+#your_trips ul li a:hover.trip_menu em.icon {
+	background: #FFF url(../images/icon_edit_trip_arrow.png) 5px 7px no-repeat;
+	border: 1px #CCC solid;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:    3px;
+}
+
+#your_trips ul li a.trip_menu.active em.icon {
+	width: 10px;
+	height: 6px;
+	display: block;
+	float: right;
+	padding: 12px 5px 0 5px;
+	position: relative;
+	top: -2px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius:    3px;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-radius-bottomleft: 0;
+	background: #FFF url(../images/icon_edit_trip_arrow.png) 5px 7px no-repeat;
+	z-index: 12;
+	border: 1px #CCC solid;
+	border-bottom: 0;
+}
+
+#your_trips ul li div.tripMenu {
+	display: none;
+}
+
+#your_trips ul li div.tripMenu.active {
+	display: block;
+	width: 130px;
+	position: absolute;
+	top: 24px;
+	right: -122px;
+	background: #FFF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-top-left-radius: 0;
+	-moz-border-radius-topleft: 0;
+	border: 1px #CCC solid;
+	-webkit-box-shadow: 0 0 5px #DDD;
+	-moz-box-shadow:    0 0 5px #DDD;
+	padding: 10px;
+	z-index: 10;
+}
+
+#your_trips ul li div.tripMenu a {
+	font-size: 12px;
+	font-weight: bold;
+	color: #555;
+	text-decoration: none;
+	padding: 5px;
+	display: block;
+}
+
+#your_trips ul li div.tripMenu a:hover {
+	background: #EEE;
+}
+
+#your_trips ul li div.tripMenu span.colors {
+	width: 131px;
+	height: 57px;
+	background: transparent url(../images/color_samples.png) 0 0 no-repeat;
+	display: block;
+	margin: 5px 0 0 0;
+}
+
+#mini_cals .cal {
+	width: 140px;
+	height: 135px;
+	background: transparent url(../images/mini_cal_sample.png) 0 0 no-repeat;
+	display: block;
+	float: left;
+	margin: 20px;
+}
+
+#mini_cals #mini_arrows {
+	float: right;
+}
+
+#mini_cals #mini_arrows a#mini_prev, #mini_cals #mini_arrows a#mini_next {
+	width: 6px;
+	height: 11px;
+	display: block;
+	text-indent: -99999px;
+	position: relative;
+	top: 5px;
+}
+
+#mini_cals #mini_arrows a#mini_prev {
+	background: transparent url(../images/mini_arrow_prev.png) 0 0 no-repeat;
+}
+
+#mini_cals #mini_arrows a#mini_next {
+	float: right;
+	margin: 0 10px 0 20px;
+	background: transparent url(../images/mini_arrow_next.png) 0 0 no-repeat;
+}
+
+#mini_cals #mini_arrows a:hover#mini_prev, #mini_cals #mini_arrows a:hover#mini_next {
+	opacity: 0.8;
+}
+
+#maincol #calendar_container {
+	margin: 20px 0 0 0;
+	padding: 400px 310px 400px 310px;
+	border: 1px #DDD solid;
+}
+
+#maincol #calendar_container h1 {
+	font-size: 30px;
+	color: #999;
+	text-align: center;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+#maincol #calendar_container h2 {
+	font-weight: bold;
+	color: #BBB;
+	font-size: 18px;
+	letter-spacing: -1px;
+	text-align: center;
+}

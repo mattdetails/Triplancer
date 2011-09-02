@@ -1,0 +1,135 @@
+body {
+	width: 100%;
+}
+
+#header {
+	background: #347996;
+	padding: 15px 20px 20px 20px;
+}
+
+#header h1 {
+	float: left;
+	margin: 8px 0 0 0;
+}
+
+#header h1 a {
+	display: block;
+	text-indent: -99999px;
+	background: transparent url(../images/logo.png) 0 0 no-repeat;
+	width: 152px;
+	height: 29px;
+}
+
+#header h1 a:hover {
+	opacity: 0.7;
+}
+
+#header ul#top_nav {
+	float: right;
+}
+
+#header ul#top_nav li {
+	float: left;
+}
+
+#header ul#top_nav li#settings, #header ul#top_nav li#manage_contacts {
+	margin: 11px 0 0 0;
+}
+
+#header ul#top_nav li#settings a {
+	width: 21px;
+	height: 22px;
+	display: block;
+	text-indent: -99999px;
+	background: transparent url(../images/btn_settings.png) 0 0 no-repeat;
+	margin: 0 0 0 25px;
+	border-right: 1px #2f6d87 solid;
+	-webkit-box-shadow: inset -1px 0 0 #3d8bac;
+	padding: 0 20px 0 0;
+}
+
+#header ul#top_nav li#manage_contacts a {
+	width: 157px;
+	height: 20px;
+	display: block;
+	text-indent: -99999px;
+	background: transparent url(../images/btn_managecontacts.png) 0 0 no-repeat;
+	margin: 0 0 0 25px;
+}
+
+#header ul#top_nav li#add_newtrip a {
+	width: 130px;
+	height: 15px;
+	display: block;
+	text-indent: -99999px;
+	background: #005376 url(../images/btn_addtrip.png) center no-repeat;
+	padding: 15px 15px 12px 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin: 0 0 0 25px;
+}
+
+#header ul#top_nav li#settings a:hover, #header ul#top_nav li#manage_contacts a:hover,
+#header ul#top_nav li#add_newtrip a:hover {
+	opacity: 0.7;
+}
+
+#container {
+	width: 100%;
+}
+
+#sidebar {
+	width: 365px;
+	float: left;
+	padding: 50px 20px 20px 20px;
+}
+
+#maincol {
+	float: left;
+	width: auto;
+}
+
+#footer {
+	border-top: 1px #DDD solid;
+	margin: 30px 0 0 0;
+	padding: 20px;
+}
+
+#footer p#copy {
+	float: left;
+	font-size: 14px;
+	color: #555;
+}
+
+#footer ul {
+	width: 400px;
+	margin: 0 auto;
+	position: relative;
+	top: -5px;
+}
+
+#footer ul li {
+	float: left;
+}
+
+#footer ul li a {
+	font-size: 14px;
+	color: #777;
+	text-decoration: none;
+	display: block;
+	padding: 5px;
+	margin: 0 15px 0 15px;
+}
+
+#footer ul li a:hover {
+	color: #333;
+}
+
+#footer a#graphyte_prod {
+	width: 168px;
+	height: 16px;
+	background: transparent url(../images/footer_logo.png) 0 0 no-repeat;
+	display: block;
+	text-indent: -99999px;
+	float: right;
+}
