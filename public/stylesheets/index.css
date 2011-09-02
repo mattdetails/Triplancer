@@ -16,10 +16,11 @@
 }
 
 #get_started ul li a {
-	width: 108px;
+	width: 168px;
 	float: left;
-	font-size: 12px;
+	font-size: 14px;
 	margin: 0 0 0 5px;
+	padding: 13px 0 13px 0;
 }
 
 #get_started ul li a:active {
