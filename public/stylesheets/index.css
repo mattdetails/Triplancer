@@ -16,21 +16,9 @@
 }
 
 #get_started ul li a {
-	background: #347996;
-	font-size: 14px;
-	font-weight: bold;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	color: #FFF;
-	padding: 12px 30px 12px 30px;
-	text-align: center;
-	text-decoration: none;
-	margin: 5px 0 0 5px;
-	display: block;
-}
-
-#get_started ul li a:hover {
-	background: #333;
+	width: 113px;
+	float: left;
+	font-size: 12px;
 }
 
 #get_started ul li a:active {
@@ -201,7 +189,7 @@
 
 #maincol #calendar_container {
 	margin: 20px 0 0 0;
-	padding: 400px 310px 400px 310px;
+	padding: 400px 0 400px 0;
 	border: 1px #DDD solid;
 }
 

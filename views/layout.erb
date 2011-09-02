@@ -7,12 +7,13 @@
   <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body class="<%= style %>" id="<%= body %>">
+  <div id="overlay"></div>
   <div id="header" class="clear">
-    <h1><a href="">Triplancer</a></h1>
+    <h1><a href="/">Triplancer</a></h1>
     <ul id="top_nav">
-      <li id="settings"><a href="">Settings</a></li>
-      <li id="manage_contacts"><a href=""><em class="icon"></em> Manage Contacts</a></li>
-      <li id="add_newtrip"><a href==""><em class="icon"></em> Add a new trip</a></li>
+      <li id="settings"><a href="/settings">Settings</a></li>
+      <li id="manage_contacts"><a href="/manage"><em class="icon"></em> Manage Contacts</a></li>
+      <li id="add_newtrip"><a href="/new"><em class="icon"></em> Add a new trip</a></li>
     </ul><!-- // top_nav -->
   </div><!-- // header -->
   <div id="container" class="clear">
@@ -21,8 +22,8 @@
   <div id="footer">
     <p id="copy">&copy; 2011 Triplancer.com</p>
     <ul>
-      <li><a href="">Terms of Service</a></li>
-      <li><a href="">Privacy Policy</a></li>
+      <li><a href="/services">Terms of Service</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
       <li><a href="">Support</a></li>
     </ul>
     <a id="graphyte_prod" href="http://graphyte.co">A Graphyte production</a>
