@@ -1,17 +1,163 @@
 /* Modal Styles */
-body#index #overlay, body#manage #overlay, body#new #overlay, 
-body#settings #overlay, body#privacy #overlay, body#service #overlay {
+body#index #overlay, body#manage #overlay, body#new #overlay, body#settings #overlay,
+body#privacy #overlay, body#service #overlay, body#import #overlay {
 	display: none;
 	width: 100%;
 	height: 100%;
 	background: rgba(0,0,0, 0.8);
 	position: absolute;
-	z-index: 99999;
+	z-index: 99;
 }
 
-body {
-	width: 100%;
+body#new #overlay {
+	display: block;
 }
+
+body#import #overlay {
+	display: block;
+}
+
+body#index .modal, body#manage .modal, body#new .modal, body#settings .modal,
+body#privacy .modal, body#service .modal, body#import .modal {
+	display: none;
+}
+
+.modal {
+	background: #FFF;
+	-webkit-box-shadow: 0 0 20px #111;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.modal .hd {
+	background: #347996;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	padding: 15px;
+}
+
+.modal .hd a.close_modal {
+	width: 25px;
+	height: 25px;
+	background: transparent url(../images/icon_close_modal.png) 0 0 no-repeat;
+	display: block;
+	text-indent: -99999px;
+	float: right;
+}
+
+.modal .hd a:hover.close_modal {
+	opacity: 0.8;
+}
+
+.modal .hd h1 {
+	font-weight: bold;
+	font-size: 16px;
+	color: #FFF;
+	padding: 5px 0 0 0;
+}
+
+.modal .bd {
+	padding: 0 20px 20px 20px;
+}
+
+body#import #import_modal {
+	display: block;
+	width: 400px;
+	height: 405px;
+	position: absolute;
+	left: 50%;
+	top: 100px;
+	z-index: 999;
+	margin-left: -200px;
+}
+
+.modal .bd h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #347996;
+	margin: 20px 0 5px 0;
+}
+
+.modal .bd p {
+	font-size: 14px;
+	line-height: 20px;
+	color: #777;
+	margin: 0 0 10px 0;
+}
+
+.modal .bd input {
+	width: 325px;
+	padding: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #777;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px #BBB solid;
+	margin: 0;
+}
+
+#import_modal #file {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background: #DDD;
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin: 0 0 10px 0;
+}
+
+#import_modal #import_google {
+	border-top: 1px #DDD solid;
+	margin: 20px 0 0 0;
+}
+
+body#new #add_new_modal {
+	display: block;
+	width: 390px;
+	height: 550px;
+	position: absolute;
+	left: 50%;
+	top: 100px;
+	z-index: 999;
+	margin-left: -200px;
+}
+
+body#new #add_new_modal #contact_list {
+	margin: 10px 0 10px 0;
+}
+
+body#new #add_new_modal #contact_list ul li {
+	float: left;
+}
+
+body#new #add_new_modal #contact_list ul li a {
+	background: #DDD;
+	font-size: 13px;
+	text-decoration: none;
+	color: #333;
+	padding: 8px 10px 8px 10px;
+	margin: 2px;
+	display: block;
+	width: 150px;
+}
+
+body#new #add_new_modal #contact_list ul li a:hover {
+	background: #D3D3D3;
+}
+
+body#new #add_new_modal a#add_another {
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+body#new #add_new_modal a#finish {
+	float: left;
+}
+
+/* End Modal Styles */
 
 #header {
 	background: #347996;
@@ -92,7 +238,6 @@ a.btn {
 	padding: 12px 30px 12px 30px;
 	text-align: center;
 	text-decoration: none;
-	margin: 5px 0 0 5px;
 	display: block;
 }
 
@@ -101,12 +246,13 @@ a.btn:hover {
 }
 
 #container {
+	margin: 20px;
 }
 
 #sidebar {
 	width: 28%;
 	float: left;
-	padding: 30px 20px 20px 20px;
+	padding: 20px;
 }
 
 #maincol {
@@ -118,12 +264,39 @@ a.btn:hover {
 	font-size: 24px;
 	color: #347996;
 	font-weight: bold;
-	padding: 20px;
+}
+
+body#settings h2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #555;
+	margin: 20px 0 10px 0;
+}
+
+body#settings input {
+	width: 300px;
+	border: 1px #DDD solid;
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #999;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 5px;
+}
+
+body#settings input:focus {
+	border-color: #BBB;
+}
+
+body#settings select {
+	width: 320px;
+	margin: 5px;
 }
 
 #footer {
 	border-top: 1px #DDD solid;
-	margin: 30px 0 0 0;
 	padding: 20px;
 }
 
@@ -164,4 +337,8 @@ a.btn:hover {
 	display: block;
 	text-indent: -99999px;
 	float: right;
+}
+
+#footer a:hover#graphyte_prod {
+	opacity: 0.8;
 }

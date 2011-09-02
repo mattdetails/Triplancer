@@ -7,6 +7,50 @@
   <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body class="<%= style %>" id="<%= body %>">
+  <div class="modal" id="import_modal">
+    <div class="hd clear">
+      <a class="close_modal" href="/">Close</a>
+      <h1>Import Contacts</h1>
+    </div><!-- // hd -->
+    <div class="bd">
+      <h2>Import CSV File</h2>
+      <div id="file"></div>
+      <a class="btn" href="/">Import Contacts</a>
+      <div id="import_google">
+      <h2>Import Contacts from Google</h2>
+      <p>Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque.</p>
+      <a class="btn" href="/">I Authorize Import from my Google Account</a>
+      </div>
+    </div><!-- // bd -->
+  </div><!-- // import_modal -->
+  <div class="modal" id="add_new_modal">
+    <div class="hd clear">
+      <a class="close_modal" href="/">Close</a>
+      <h1>Add a Trip</h1>
+    </div><!-- // hd -->
+    <div class="bd">
+      <h2>Trip Label</h2>
+      <input type="text" />
+      <h2>Departure Date</h2>
+      <input type="text" />
+      <h2>Return Date</h2>
+      <input type="text" />
+      <h2>Add Contacts</h2>
+      <input type="text" />
+      <div id="contact_list" class="clear">
+        <ul>
+          <li><a href="">npr@pculture.org</a></li>
+          <li><a href="">npr@pculture.org</a></li>
+          <li><a href="">npr@pculture.org</a></li>
+          <li><a href="">npr@pculture.org</a></li>
+          <li><a href="">npr@pculture.org</a></li>
+          <li><a href="">npr@pculture.org</a></li>
+        </ul>
+      </div><!-- // contact_list -->
+      <a id="add_another" class="btn" href="">Add another trip</a>
+      <a id="finish" class="btn" href=="">Finish - Add trip</a>
+    </div><!-- // bd -->
+  </div><!-- // add_new_modal -->
   <div id="overlay"></div>
   <div id="header" class="clear">
     <h1><a href="/">Triplancer</a></h1>
@@ -22,7 +66,7 @@
   <div id="footer">
     <p id="copy">&copy; 2011 Triplancer.com</p>
     <ul>
-      <li><a href="/services">Terms of Service</a></li>
+      <li><a href="/service">Terms of Service</a></li>
       <li><a href="/privacy">Privacy Policy</a></li>
       <li><a href="">Support</a></li>
     </ul>

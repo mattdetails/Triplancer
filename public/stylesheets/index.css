@@ -16,9 +16,10 @@
 }
 
 #get_started ul li a {
-	width: 113px;
+	width: 108px;
 	float: left;
 	font-size: 12px;
+	margin: 0 0 0 5px;
 }
 
 #get_started ul li a:active {
@@ -59,8 +60,15 @@
 	margin: 0 10px 0 0;
 }
 
+
+	
+
 #your_trips ul li a.trip_name em.red {
 	background: #be001b;
+}
+
+#your_trips ul li a.trip_name em.red.active {
+	background: #be001b url(../images/icon_trip_check.png) 4px 5px no-repeat;
 }
 
 #your_trips ul li a.trip_name span {
@@ -157,7 +165,7 @@
 	background: transparent url(../images/mini_cal_sample.png) 0 0 no-repeat;
 	display: block;
 	float: left;
-	margin: 20px;
+	margin: 15px;
 }
 
 #mini_cals #mini_arrows {

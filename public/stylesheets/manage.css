@@ -3,9 +3,8 @@ body#manage #maincol {
 }
 
 body#manage #maincol table {
-	width: 97%;
+	width: 100%;
 	border: 1px #DDD solid;
-	margin: 0 20px 20px 20px;
 }
 
 body#manage #maincol table tr td {
@@ -30,5 +29,4 @@ body#manage #maincol table tr#last td {
 
 body#manage #maincol a#import_contacts {
 	float: right;
-	margin: 10px 20px 10px 20px;
 }
